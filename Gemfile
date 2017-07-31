@@ -15,6 +15,8 @@ gem 'font-awesome-sass'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'gibbon'
+gem "figaro"
 
 group :development, :test do
   gem 'better_errors'
