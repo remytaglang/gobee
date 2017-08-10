@@ -23,19 +23,20 @@
                     <!--End Navigation Icon-->
 
                     <!-- Navigation Menu -->
-<!--                     <div class="nav-menu singlepage-nav">
+                    <div class="nav-menu singlepage-nav">
                         <ul class="nav-menu-inner">
-                            <li><a href="#intro">Home</a></li>
+<!--                             <li><a href="#intro">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#latest-work">Work</a></li>
                             <li><a href="#service">Service</a></li>
                             <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#client">Client</a></li>
-                            <li><a href="#elements">Elements</a></li>
-                            <li><a href="#contact-us">Contact</a></li>
-                            <li><a class="nav-external all-demos-link" target="_blank">Demos</a></li>
+                            <li><a href="#client">Client</a></li> -->
+                            <li><a href="http://localhost:3000/fr">French</a></li>
+                            <li><a href="http://localhost:3000/en">English</a></li>
+                            <!-- <li><a class="nav-external all-demos-link" target="_blank">Demos</a></li> -->
+
                         </ul>
-                    </div> -->
+                    </div>
                     <!-- End Navigation Menu -->
                 </div>
             </div>
@@ -50,14 +51,17 @@
                         <div class="intro-content">
                             <div class="intro-content-inner">
 
-                                <h6 class="page-title-alt color mb-30">Gobee Bike débarque à Lille</h6>
+                                <h6 class="page-title-alt color mb-30"><%= t('hello') %></h6>
 
                                 <h1 class="intro-title mb-30">
                                     La façon la plus facile pour <br> <span class="text-rotate">rouler, débloquer un vélo, se balader, aller au travail </span> à Lille
 
                                 </h1>
 
-                                <h6 class="page-title-alt color mb-30">Profitez de votre premier trajet gratuit en vous inscrivant ! </h6>
+
+                                <h6 class="page-title-alt color mb-30"><%= t('testing_html') %></h6>
+
+                                <% if params["locale"] == "fr" %>
 
                                 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -77,6 +81,8 @@
     </div>
 </form>
 </div>
+
+<% end %>
 
 <!--End mc_embed_signup-->
 
@@ -101,7 +107,7 @@
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             <div class="spacer-15"></div>
                             <h6 class="page-title-alt color mb-10"></h6>
-                            <h2 class="page-title mb-25">Votre vélo à proximité <span class="text-light"></span></h2>
+                            <h2 class="page-title mb-25"> <%= t('bike') %> <span class="text-light"></span></h2>
                             <p class="mb-35">Rouler librement avec un vélo Gobee Bike et prenez le large ! </p>
 
                         </div>
