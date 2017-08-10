@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Gobee bike is live !"
-  testing_html: "<strong> Freedom to ride </strong>"
-  bike: "A bike close to you. Everytime"
+fr:
+  hello: "Gobee bike arrive à Lille !"
+  testing_html: "Profitez d'une première course gratuite pour le lancement "
+  bike: "Votre vélo à proximité"
